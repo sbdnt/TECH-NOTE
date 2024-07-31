@@ -4,8 +4,8 @@
 
 
 ## 002.Middleware class
-	```python
-	"corsheaders.middleware.CorsMiddleware",
+    ```python
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -18,6 +18,7 @@
     "app.core.context.AppContextMiddleware",
     "app.devices.middleware.DeviceIDLoggerMiddleware",
     ....
+    
     ```python
 
 
