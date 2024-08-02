@@ -159,7 +159,7 @@ git stash apply stash@{n}
 ```
 
 ## 06.CHERRY-PICK
-<img src="cherry_pick.png">
+<img src="cherry_pick.jpeg">
 - Cherry-pick một commit từ một nhánh khác
 - Để cherry-pick (chọn một commit) từ một nhánh khác vào nhánh hiện tại, bạn cần xác định ID của commit đó (hash của commit):
 ```bash
