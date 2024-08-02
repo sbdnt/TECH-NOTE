@@ -1,5 +1,5 @@
 ## 01.RESET
-<img src="git-reset.png">
+<img src="images/git-reset.png">
 
 - soft: Di chuyển HEAD về commit chỉ định, nhưng giữ lại tất cả các thay đổi trong staging area. Các thay đổi sẽ trở thành staged (sẵn sàng để commit).
 ```bash
@@ -20,7 +20,7 @@ git reset --hard <commit>
 Thường được sử dụng khi bạn muốn làm sạch cây làm việc và chỉ số, trở về một điểm biết chắc là ổn định trong lịch sử commit.
 
 ## 02.SQUASH COMMITS:
-<img src="squash.png">
+<img src="images/squash.png">
 - Để gộp nhiều commit thành một commit trong Git, bạn có thể sử dụng lệnh git rebase với tùy chọn -i (interactive). Ví dụ bạn muốn gộp commit từ 1 đến 5 thành 1 commit và từ 6 đến 10 thành 1 commit.
 
 - Dưới đây là các bước để thực hiện điều đó:
@@ -60,7 +60,7 @@ Hoàn tất quá trình rebase: Sau khi bạn đã chỉnh sửa thông điệp 
 Sau khi hoàn tất, bạn sẽ có 2 commit mới - một cho các commit từ 1 đến 5 và một cho các commit từ 6 đến 10.
 
 ## 03.CHECKOUT AND REVERT
-<img src="revert-reset.png">
+<img src="images/revert-reset.png">
 ```bash
 git checkout
 ```
@@ -95,7 +95,7 @@ git revert: Tạo một commit mới đảo ngược các thay đổi của comm
 
 
 ## 04.REBASE-MERGE
-<img src="rebase-merge.png">
+<img src="images/rebase-merge.png">
 - Rebase giúp "kéo" tất cả các commit từ nhánh được rebase lên trên đỉnh của nhánh hiện tại, tạo ra một chuỗi commit mới và sạch sẽ hơn. Kết quả là lịch sử commit sẽ trở nên sạch hơn và dễ hiểu hơn so với việc merge thông thường. Khi rebase một nhánh vào nhánh khác, bạn đang cố gắng tích hợp các thay đổi mới nhất từ nhánh feature vào nhánh hiện tại một cách liền mạch.
 
 ```bash
@@ -118,7 +118,7 @@ git rebase --continue
 ```
 
 ## 05.STASH
-<img src="stash.png">
+<img src="images/stash.png">
 Lưu trữ thay đổi với git stash
 Khi bạn muốn lưu trữ tạm thời các thay đổi chưa được commit, bạn có thể sử dụng lệnh:
 ```bash
@@ -159,7 +159,7 @@ git stash apply stash@{n}
 ```
 
 ## 06.CHERRY-PICK
-<img src="cherry_pick.jpeg">
+<img src="images/cherry_pick.jpeg">
 - Cherry-pick một commit từ một nhánh khác
 - Để cherry-pick (chọn một commit) từ một nhánh khác vào nhánh hiện tại, bạn cần xác định ID của commit đó (hash của commit):
 ```bash
