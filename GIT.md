@@ -1,19 +1,19 @@
 ## 01.RESET
 <img src="images/git-reset.png">
 
-- soft: Di chuyển HEAD về commit chỉ định, nhưng giữ lại tất cả các thay đổi trong staging area. Các thay đổi sẽ trở thành staged (sẵn sàng để commit).
+- **soft**: Di chuyển HEAD về commit chỉ định, nhưng giữ lại tất cả các thay đổi trong staging area. Các thay đổi sẽ trở thành staged (sẵn sàng để commit).
 ```bash
 git reset --soft <commit>
 ```
 Khi muốn gộp một nhóm các commit cuối cùng thành 1 commit với nội dung được chỉ định.
 
-- mixed (mặc định): Di chuyển HEAD về commit chỉ định và xóa các thay đổi khỏi staging area, nhưng giữ lại trong working directory. Các thay đổi sẽ không còn staged.
+- **mixed** (mặc định): Di chuyển HEAD về commit chỉ định và xóa các thay đổi khỏi staging area, nhưng giữ lại trong working directory. Các thay đổi sẽ không còn staged.
 ```bash
 git reset --mixed <commit>  
 ```
 Khi muốn xem lại nhưng thay đổi của các file ở commit được chỉ định.
 
-- hard: Di chuyển HEAD về commit chỉ định và xóa tất cả các thay đổi trong cả staging area và working directory. Lệnh này sẽ không thể khôi phục lại các thay đổi đã mất, vì vậy cần cẩn thận khi sử dụng.
+- **hard**: Di chuyển HEAD về commit chỉ định và xóa tất cả các thay đổi trong cả staging area và working directory. Lệnh này sẽ không thể khôi phục lại các thay đổi đã mất, vì vậy cần cẩn thận khi sử dụng.
 ```bash
 git reset --hard <commit> 
 ```
@@ -179,7 +179,6 @@ Cherry-pick một range của commit
 Bạn cũng có thể cherry-pick một dải (range) các commit bằng cách sử dụng ký tự ^ để chỉ định commit cha của dải và .. để chỉ định dải:
 ```bash
 git cherry-pick <commit-range-start>^..<commit-range-end>
-
 Ex: git cherry-pick abc1234^..def5678
 ```
 
