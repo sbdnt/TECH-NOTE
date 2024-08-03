@@ -247,6 +247,7 @@ git reflog
 git checkout -b <branch_name> <commit_hash>
 ```
 ## 14.Xóa file khỏi staging area:
+<img src="images/git-stage.png">
 Cách xử lý: Sử dụng git reset HEAD <file> để xóa file khỏi staging.
 ```bash
 git reset HEAD <file>
@@ -275,6 +276,7 @@ Lệnh git push -f (hoặc git push --force) được sử dụng để đẩy (
 - Khi bạn làm việc trên branch cá nhân của bạn và muốn chỉnh sửa lại lịch sử commit trước đó để giữ cho lịch sử commit gọn gàng và dễ đọc.
 - Khi bạn muốn cập nhật remote repository với lịch sử commit mới nhất của bạn và không quan trọng đến lịch sử commit cũ.
 ## 18.Patch
+<img src="images/patch.png">
 Khi sử dụng Git Patch, bạn có thể tạo và áp dụng patch để chuyển đổi các thay đổi từ một branch hoặc commit sang một branch hoặc commit khác. Dưới đây là cách sử dụng Git Patch:
 
 **1. Tạo Patch:**
