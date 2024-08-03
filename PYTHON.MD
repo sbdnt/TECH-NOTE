@@ -1,8 +1,8 @@
-## PEP 8 - Python Enhancement Proposal 8
+# PEP 8 - Python Enhancement Proposal 8
 - Ref https://peps.python.org/pep-0008/
 
 
-# 001.Không sử dụng tab để thụt lề, hãy sử dụng 4 dấu cách (spaces).
+### 001.Không sử dụng tab để thụt lề, hãy sử dụng 4 dấu cách (spaces).
 Ví dụ:
 ```python
 if x == 1:  
