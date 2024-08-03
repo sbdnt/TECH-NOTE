@@ -248,8 +248,9 @@ git checkout -b <branch_name> <commit_hash>
 ```
 ## 14.Xóa file khỏi staging area:
 Cách xử lý: Sử dụng git reset HEAD <file> để xóa file khỏi staging.
-
-
+```bash
+git reset HEAD <file>
+```
 ## 15.Bổ sung một số file vô commit gần nhất: 
 ```bash
 git add file1.txt file2.txt
