@@ -9,19 +9,19 @@ if x == 1:
     print("x is 1") 
 ``` 
 
-002.Sử dụng khoảng trắng đúng cách để cải thiện khả năng đọc của mã.
+# 002.Sử dụng khoảng trắng đúng cách để cải thiện khả năng đọc của mã.
 Ví dụ:
 ```python
 total = variable1 + (variable2 * 5) - variable3
 ```
 
-003.Sử dụng quy tắc snake_case để đặt tên biến, có nghĩa là sử dụng chữ thường và dấu gạch dưới (_) thay vì khoảng trắng hoặc chữ hoa.
+# 003.Sử dụng quy tắc snake_case để đặt tên biến, có nghĩa là sử dụng chữ thường và dấu gạch dưới (_) thay vì khoảng trắng hoặc chữ hoa.
 Ví dụ:
 ```python
 my_variable_name = 5
 ```
 
-004.Đặt positional arguments trước keyword arguments:
+# 004.Đặt positional arguments trước keyword arguments:
 
 Khi định nghĩa hàm, tham số vị trí (positional arguments) phải được đặt trước tham số từ khóa (keyword arguments).
 Ví dụ:
@@ -30,20 +30,20 @@ def function_name(arg1, arg2, kwarg1=None, kwarg2=None):
     pass
 ```
 
-005.Đặt tên biến hằng bằng chữ in hoa và sử dụng dấu gạch dưới (_) để phân tách các từ.
+# 005.Đặt tên biến hằng bằng chữ in hoa và sử dụng dấu gạch dưới (_) để phân tách các từ.
 Ví dụ:
 ```python
 MAX_VALUE = 100
 ```
 
-006.Shebang line là dòng đầu tiên trong một tập tin script, bắt đầu bằng #!, dùng để chỉ định trình thông dịch nào sẽ thực thi tập tin đó.
+# 006.Shebang line là dòng đầu tiên trong một tập tin script, bắt đầu bằng #!, dùng để chỉ định trình thông dịch nào sẽ thực thi tập tin đó.
 Ví dụ:
 ```python
 #!/usr/bin/env python
 ``` 
 Trong ví dụ trên, dòng này cho biết hệ điều hành nên sử dụng trình thông dịch Python để chạy script. Điều này giúp script có thể chạy trực tiếp từ dòng lệnh mà không cần nhập lệnh python trước tên tập tin.
 
-007.Docstrings:
+# 007.Docstrings:
 Docstring là chuỗi văn bản nằm ngay bên dưới định nghĩa hàm, được sử dụng để mô tả chức năng, các tham số và giá trị trả về của hàm.
 Ví dụ:
 ```python
@@ -61,7 +61,7 @@ def my_function(param1, param2):
     pass 
 ```
 
-008.Sử dụng CapWords cho tên lớp:
+# 008.Sử dụng CapWords cho tên lớp:
 Khi đặt tên cho lớp trong Python, sử dụng quy tắc CapWords (hay còn gọi là CamelCase), tức là bắt đầu mỗi từ trong tên lớp bằng chữ hoa và không dùng dấu gạch dưới.
 Ví dụ:
 ```python
@@ -69,7 +69,7 @@ class LopCuaToi:
     pass
 ```
 
-009.Tránh sử dụng danh sách là đối số mặc định
+# 009.Tránh sử dụng danh sách là đối số mặc định
 Khi định nghĩa hàm, tránh sử dụng danh sách (hoặc các đối tượng thay đổi khác) làm đối số mặc định, vì nó có thể dẫn đến hành vi không mong muốn.
 
 Thay vào đó, hãy kiểm tra xem đối số có phải là None hay không và gán một danh sách mới bên trong hàm.
@@ -90,7 +90,7 @@ def them_phan_vao_danh_sach(danh_sach=None):
     return danh_sach
 ```
 
-010.Sử dụng dòng trống để phân tách hàm và lớp trong Python là một cách để cải thiện khả năng đọc của mã nguồn. Bằng cách thêm dòng trống giữa các hàm hoặc lớp, bạn giúp người đọc dễ dàng nhận ra các phần khác nhau của mã.
+# 010.Sử dụng dòng trống để phân tách hàm và lớp trong Python là một cách để cải thiện khả năng đọc của mã nguồn. Bằng cách thêm dòng trống giữa các hàm hoặc lớp, bạn giúp người đọc dễ dàng nhận ra các phần khác nhau của mã.
 
 Ví dụ:
 ```python
@@ -101,7 +101,7 @@ def ham2():
     pass  
 ```
 
-011.Dấu ngoặc:
+# 011.Dấu ngoặc:
 Sử dụng dấu ngoặc cho các điều kiện phức tạp để tăng tính rõ ràng.
 ```python
 if (x > 0 and   
@@ -109,7 +109,7 @@ if (x > 0 and
     pass
 ```
 
-012.Sắp xếp import:
+# 012.Sắp xếp import:
 Sắp xếp các import theo thứ tự từ thư viện chuẩn, thư viện bên ngoài, và thư viện nội bộ.
 ```python
 import os  
@@ -118,21 +118,21 @@ import sys
 from mymodule import myfunction  
 ```
 
-013.Chú thích dòng:
+# 013.Chú thích dòng:
 Chú thích nên được viết trên cùng một dòng với mã, với ít nhất 2 khoảng trắng.
 ```python
 x = x + 1  # Tăng giá trị x lên 1
 
 ```
 
-014.Tránh sử dụng dấu cách trong biểu thức điều kiện
+# 014.Tránh sử dụng dấu cách trong biểu thức điều kiện
 ```python
 if x in range(10):  
     print("x là một số trong khoảng 0 đến 9.")  
 Giải thích: Không nên có dấu cách giữa chức năng và dấu ngoặc đơn.
 ```
 
-015.Ký hiệu 'self' và 'cls':
+# 015.Ký hiệu 'self' và 'cls':
 Sử dụng 'self' cho tham số đầu tiên của phương thức trong lớp, và 'cls' cho phương thức lớp.
 ```python
 class MyClass:
@@ -141,7 +141,7 @@ class MyClass:
 
 ```
 
-016.Sử dụng with để tự động đóng file
+# 016.Sử dụng with để tự động đóng file
 ```python
 try:  
     with open('example.txt', 'r') as file:  
@@ -153,7 +153,7 @@ except IOError as e:
 ```
 Giải thích: Sử dụng with tự động đóng file khi kết thúc khối lệnh.
 
-Kiểm tra xem file có tồn tại hay không trước khi mở
+# Kiểm tra xem file có tồn tại hay không trước khi mở
 ```python
 import os  
 
@@ -166,7 +166,7 @@ else:
 ```
 Giải thích: Kiểm tra sự tồn tại của file trước khi mở nhằm tránh lỗi.
 
-Đọc file dòng theo dòng
+# Đọc file dòng theo dòng
 ```python
 try:  
     with open('example.txt', 'r') as file:  
@@ -177,7 +177,7 @@ except FileNotFoundError:
 ```
 Giải thích: Đọc file từng dòng để tiết kiệm bộ nhớ cho file lớn.
 
-Ghi vào file mới
+# Ghi vào file mới
 ```python
 try:  
     with open('new_file.txt', 'w') as file:  
@@ -187,7 +187,7 @@ except IOError as e:
 ```python
 Giải thích: Mở file ở chế độ ghi, tạo file mới nếu chưa tồn tại.
 
-Ghi thêm vào file đã tồn tại
+# Ghi thêm vào file đã tồn tại
 ```python
 try:  
     with open('existing_file.txt', 'a') as file:  
@@ -197,7 +197,7 @@ except IOError as e:
 ```
 Giải thích: Dùng chế độ thêm (append) để không ghi đè lên nội dung cũ.
 
-Đọc từng byte từ file
+# Đọc từng byte từ file
 ```python
 try:  
     with open('example.txt', 'rb') as file:  
@@ -210,7 +210,7 @@ except FileNotFoundError:
 ```
 Giải thích: Đọc file theo byte, hữu ích với các file nhị phân.
 
-Đọc một file nhị phân
+# Đọc một file nhị phân
 ```python
 try:  
     with open('image.png', 'rb') as file:  
@@ -220,7 +220,7 @@ except FileNotFoundError:
 ```
 Giải thích: Mở file nhị phân để xử lý hình ảnh hoặc file không văn bản.
 
-Ghi nhiều dòng vào file
+# Ghi nhiều dòng vào file
 ```python
 lines = ["Line 1\n", "Line 2\n", "Line 3\n"]  
 try:  
@@ -231,7 +231,7 @@ except IOError as e:
 ```
 Giải thích: Sử dụng writelines() để ghi nhiều dòng cùng lúc.
 
-Thay đổi encoding khi mở file
+# Thay đổi encoding khi mở file
 ```python
 try:  
     with open('example.txt', 'r', encoding='utf-8') as file:  
@@ -241,7 +241,7 @@ except UnicodeDecodeError:
 ```
 Giải thích: Chỉ định encoding khi mở file có thể tránh được lỗi mã hóa.
 
-Đổ dữ liệu ra file JSON
+# Đổ dữ liệu ra file JSON
 ```python
 import json  
 
@@ -254,7 +254,7 @@ except IOError as e:
 ```
 Giải thích: Sử dụng json.dump() để ghi đối tượng Python sang file JSON.
 
-Đọc dữ liệu từ file JSON
+# Đọc dữ liệu từ file JSON
 ```python
 try:  
     with open('data.json', 'r') as file:  
@@ -264,7 +264,7 @@ except FileNotFoundError:
 ```
 Giải thích: Sử dụng json.load() để đọc dữ liệu từ file JSON.
 
-Xử lý lỗi phân tích cú pháp
+# Xử lý lỗi phân tích cú pháp
 ```python
 try:  
     with open('data.json', 'r') as file:  
@@ -274,7 +274,7 @@ except json.JSONDecodeError:
 ```
 Giải thích: Kiểm soát lỗi khi dữ liệu trong file JSON không hợp lệ.
 
-Xử lý lỗi quyền truy cập
+# Xử lý lỗi quyền truy cập
 ```python
 try:  
     with open('protected_file.txt', 'r') as file:  
@@ -284,7 +284,7 @@ except PermissionError:
 ```
 Giải thích: Kiểm soát lỗi khi không có quyền truy cập vào file.
 
-Đọc file lớn theo khối (chunk)
+# Đọc file lớn theo khối (chunk)
 ```python
 try:  
     with open('large_file.txt', 'r') as file:  
@@ -295,7 +295,7 @@ except FileNotFoundError:
 ```
 Giải thích: Đọc file lớn theo khối để tiết kiệm bộ nhớ.
 
-Đếm số dòng trong file
+# Đếm số dòng trong file
 ```python
 try:  
     with open('example.txt', 'r') as file:  
@@ -306,7 +306,7 @@ except FileNotFoundError:
 ```
 Giải thích: Đếm số dòng trong file bằng comprehension.
 
-Kiểm tra kiểu file dựa trên extension
+# Kiểm tra kiểu file dựa trên extension
 ```python
 import os  
 
@@ -320,7 +320,7 @@ if os.path.splitext(filename)[1] == '.txt':
 ```
 Giải thích: Kiểm tra phần mở rộng file trước khi mở.
 
-Tạo và ghi file CSV
+# Tạo và ghi file CSV
 ```python
 import csv  
 
@@ -334,7 +334,7 @@ except IOError as e:
 ```
 Giải thích: Ghi dữ liệu vào file CSV.
 
-Đọc file CSV
+# Đọc file CSV
 ```python
 try:  
     with open('people.csv', 'r') as file:  
@@ -346,7 +346,7 @@ except FileNotFoundError:
 ```
 Giải thích: Đọc file CSV và xử lý từng dòng.
 
-Nén file với gzip
+# Nén file với gzip
 ```python
 import gzip  
 
@@ -359,7 +359,7 @@ except IOError as e:
 ```
 Giải thích: Nén file với gzip để tiết kiệm không gian lưu trữ.
 
-Giải nén file gzip
+# Giải nén file gzip
 ```python
 import gzip  
 
@@ -372,20 +372,20 @@ except FileNotFoundError:
 Giải thích: Mở file nén với gzip để truy cập nội dung.
 
 
-017.Type hints cho các hàm
+# 017.Type hints cho các hàm
 ```python
 def concatenate_strings(s1: str, s2: str) -> str:  
     return s1 + s2  
 ```
 Giải thích: Sử dụng type hints để chỉ định kiểu dữ liệu của tham số và giá trị trả về, giúp dễ dàng kiểm tra và tài liệu hóa mã của bạn.
 
-018.Tối ưu hóa import:
+# 018.Tối ưu hóa import:
 Chỉ import những gì cần thiết để tránh việc import toàn bộ module.
 ```python
 from math import pi
 ```
 
-019.Sử dụng đa dòng:
+# 019.Sử dụng đa dòng:
 Khi một chuỗi quá dài, sử dụng dấu ngoặc đơn hoặc ngoặc vuông cho chuỗi đa dòng.
 ```python
 my_string = (  
@@ -394,7 +394,7 @@ my_string = (
 )
 ```
 
-020.Xử lý ngoại lệ:
+# 020.Xử lý ngoại lệ:
 ```python
 try:
     file = open('example.txt', 'r')
@@ -410,21 +410,21 @@ finally:
     print("Execution completed.")
 ```
 
-021.Sử dụng list comprehension
+# 021.Sử dụng list comprehension
 ```python
 squares = [x**2 for x in range(10)]
 ```
 Giải thích: Sử dụng list comprehension để tạo danh sách bình phương của các số từ 0 đến 9 một cách ngắn gọn và rõ ràng.
 
 
-022.Khai báo biến nhóm
+# 022.Khai báo biến nhóm
 ```python
 first_name, last_name = "John", "Doe"
 ```
 Giải thích: Khai báo biến nhóm giúp mã gọn gàng hơn.
 
 
-023.Sử dụng enumerate khi duyệt qua danh sách
+# 023.Sử dụng enumerate khi duyệt qua danh sách
 ```python
 for index, value in enumerate(my_list):  
     print(index, value)  
@@ -432,7 +432,7 @@ for index, value in enumerate(my_list):
 Giải thích: Sử dụng enumerate để có cả chỉ số và giá trị khi duyệt qua danh sách.
 
 
-024.Kiểm tra None bằng cách so sánh trực tiếp
+# 024.Kiểm tra None bằng cách so sánh trực tiếp
 ```python
 if my_variable is not None:  
     print("Variable có giá trị")  
@@ -440,44 +440,42 @@ if my_variable is not None:
 Giải thích: Sử dụng is not None là cách tốt hơn để kiểm tra giá trị None
 
 
-026. Sử dụng set để loại bỏ trùng lặp
+# 026. Sử dụng set để loại bỏ trùng lặp
 ```python
 unique_numbers = set([1, 2, 2, 3, 4])  
 ```
 Giải thích: Sử dụng set để tạo ra danh sách không có phần tử trùng lặp.
 
 
-027.Định nghĩa biến toàn cục trong nội bộ hàm với global
+# 027.Định nghĩa biến toàn cục trong nội bộ hàm với global
 ```python
 count = 0  
 def increment():  
     global count  
     count += 1
 ```
-
-
-028.Khởi tạo list
+# 028.Khởi tạo list
 numbers = [0] * 10  # Khởi tạo danh sách có kích thước 10
 
 
-029.Sử dụng extend() thay vì append() để thêm nhiều phần tử:
+# 029.Sử dụng extend() thay vì append() để thêm nhiều phần tử:
 ```python
 list1 = [1, 2, 3]  
 list1.extend([4, 5])  # Thêm nhiều phần tử
 ```
 
-030.Sử dụng .get() để truy cập giá trị: Điều này giúp tránh KeyError nếu khóa không tồn tại.
+# 030.Sử dụng .get() để truy cập giá trị: Điều này giúp tránh KeyError nếu khóa không tồn tại.
 ```python
 value = my_dict.get('key', default_value)  # Sử dụng get
 ```
 
-031.Sử dụng collections.defaultdict cho từ điển với giá trị mặc định: Khi bạn cần tự động khởi tạo các giá trị.
+# 031.Sử dụng collections.defaultdict cho từ điển với giá trị mặc định: Khi bạn cần tự động khởi tạo các giá trị.
 ```python
 from collections import defaultdict  
 my_dict = defaultdict(int)  # Mặc định là 0
 ```
 
-031.Sử dụng is để so sánh với None
+# 032.Sử dụng is để so sánh với None
 ```python
 Sai
 
@@ -489,7 +487,7 @@ if x is None:
     print("x is None") 
 ```
 
-032.Tránh sử dụng số ma thuật
+# 033.Tránh sử dụng số ma thuật
 ```python
 Sai
 
@@ -502,7 +500,7 @@ DISCOUNT_RATE = 0.9
 discounted_price = PRICE * DISCOUNT_RATE
 ```
 
-033.Sử dụng assert cho kiểm tra
+# 034.Sử dụng assert cho kiểm tra
 ```python
 Sai
 
@@ -518,7 +516,7 @@ def divide(a, b):
 
  ```
 
-034.Ưu tiên sử dụng f-string cho định dạng chuỗi
+# 035.Ưu tiên sử dụng f-string cho định dạng chuỗi
 ```python
 Sai
 
@@ -530,7 +528,7 @@ name = "John"
 greeting = f"Hello, {name}!"
 ```
 
-035.Sử dụng sorted thay vì sort để không thay đổi danh sách gốc
+# 036.Sử dụng sorted thay vì sort để không thay đổi danh sách gốc
 ```python
 Sai
 
@@ -542,7 +540,7 @@ my_list = [3, 1, 2]
 sorted_list = sorted(my_list)
 ```
 
-036.Sử dụng zip cho việc kết hợp các danh sách
+# 037.Sử dụng zip cho việc kết hợp các danh sách
 ```python
 Sai
 
@@ -559,7 +557,7 @@ for name, age in zip(names, ages):
 
 ```
 
-037.Tránh sữa đổi các đối tượng mutable bên trong hàm
+# 038.Tránh sữa đổi các đối tượng mutable bên trong hàm
 ```python
 Sai
 
@@ -579,7 +577,7 @@ items = []
 new_items = add_item(items)
 ```
 
-038.Sử dụng hàm join để nối chuỗi
+# 039.Sử dụng hàm join để nối chuỗi
 ```python
 Sai
 
@@ -593,7 +591,7 @@ my_list = ["a", "b", "c"]
 result = "".join(my_list)
 ```
 
-039.Sử dụng isinstance để kiểm tra loại
+# 040.Sử dụng isinstance để kiểm tra loại
 ```python
 Sai
 
@@ -605,7 +603,7 @@ if isinstance(x, int):
     print("x is an int")
 ```
 
-040.Sử dụng Counter để đếm tần suất
+# 041.Sử dụng Counter để đếm tần suất
 ```python
 Sai
 
@@ -624,7 +622,7 @@ letters = ["a", "b", "a", "c"]
 counts = Counter(letters)  
 ```
 
-041.Sử dụng kiểu dữ liệu số hợp lý
+# 042.Sử dụng kiểu dữ liệu số hợp lý
 ```python
 Sai
 
@@ -637,7 +635,7 @@ a = Decimal('0.1') + Decimal('0.2')
 
 ```
 
-042.Sử dụng *args và **kwargs trong hàm
+# 043.Sử dụng *args và **kwargs trong hàm
 ```python
 Sai
 def my_function(arg1, arg2):  
@@ -647,7 +645,7 @@ def my_function(*args, **kwargs):
     pass
 ```
 
-043.Sử dụng kiểm tra kiểu để tránh lỗi
+# 044.Sử dụng kiểm tra kiểu để tránh lỗi
 ```python
 Sai
 
@@ -662,7 +660,7 @@ def add(a, b):
 
 ```
 
-044.Sử dụng shuffle từ module random
+# 045.Sử dụng shuffle từ module random
 ```python
 Sai
 
@@ -679,7 +677,7 @@ items = [1, 2, 3, 4, 5]
 random.shuffle(items)
 ```
 
-045.Sử dụng kiểu dữ liệu chính xác trong lớp
+# 046.Sử dụng kiểu dữ liệu chính xác trong lớp
 ```python
 Sai
 
@@ -695,7 +693,7 @@ class Person:
         self.age = age
 ```
 
-046.Sử dụng all() và any() để kiểm tra điều kiện
+# 047.Sử dụng all() và any() để kiểm tra điều kiện
 ```python
 Sai
 
@@ -708,7 +706,7 @@ for x in numbers:
 all_positive = all(x > 0 for x in numbers)
 ```
 ```python
-047.Sử dụng raise để tạo ngoại lệ
+# 048.Sử dụng raise để tạo ngoại lệ
 
 Sai
 
