@@ -728,27 +728,32 @@ class MyClass:
     def my_method(self, a, b, c=10):  
         return a + b + c  
 
-# Gọi bằng tham số vị trí  
+##### Gọi bằng tham số vị trí  
+```python
 result1 = MyClass().my_method(5, 3)  # c sẽ nhận giá trị mặc định là 10  
 print(result1)  # Kết quả: 18  
-
-# Gọi bằng tham số vị trí với tham số thứ ba  
+```
+##### Gọi bằng tham số vị trí với tham số thứ ba  
+```python
 result2 = MyClass().my_method(5, 3, 4)  # c sẽ là 4  
 print(result2)  # Kết quả: 12  
-
-# Lời gọi bằng tham số kiểu keyword  
+```
+#### Lời gọi bằng tham số kiểu keyword  
+```python
 result3 = MyClass().my_method(a=5, b=3)  
-print(result3)  # Kết quả: 18  
-Gọi bằng tham số trộn lẫn
+print(result3)  # Kết quả: 18
+```  
+#### Gọi bằng tham số trộn lẫn
 Bạn cũng có thể kết hợp cả hai cách gọi: tham số vị trí và tham số kiểu keyword. Tuy nhiên, các tham số vị trí phải được đặt trước tiên trước khi sử dụng tham số kiểu keyword.
-
+```python
 result4 = MyClass().my_method(5, b=3)  # a là 5, b là 3, c là 10  
 print(result4)  # Kết quả: 18  
 Nếu bạn cố gắng truyền tham số theo thứ tự vị trí cho một tham số đã được xác định là kiểu keyword bên dưới, bạn sẽ nhận được lỗi.
-
-# Ví dụ sai  
+```
+#### Ví dụ sai  
+```python
 try:  
     result5 = MyClass().my_method(a=5, 3)  # Lỗi  
 except SyntaxError as e:  
     print(e)  # Sẽ in ra lỗi cú pháp  
-
+```
