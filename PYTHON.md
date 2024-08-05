@@ -757,3 +757,4 @@ try:
 except SyntaxError as e:  
     print(e)  # Sẽ in ra lỗi cú pháp  
 ```
+**Note:** Có thể kết hợp cả hai loại tham số trong một lời gọi, nhưng các tham số vị trí phải được đặt trước tham số kiểu keyword.
