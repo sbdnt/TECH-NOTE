@@ -719,4 +719,36 @@ def divide(a, b):
         raise ValueError("Cannot divide by zero")  
     return a / b
 ```
+### 048. Tham số vị trí và tham số keyword:
+Lời gọi bằng tham số vị trí
+Nếu bạn định nghĩa một phương thức có tham số kiểu keyword, bạn có thể gọi nó bằng cách truyền các tham số theo thứ tự vị trí, miễn là bạn đã cung cấp đủ số lượng tham số cần thiết. Dưới đây là một số ví dụ minh họa:
+
+Ví dụ:
+class MyClass:  
+    def my_method(self, a, b, c=10):  
+        return a + b + c  
+
+# Gọi bằng tham số vị trí  
+result1 = MyClass().my_method(5, 3)  # c sẽ nhận giá trị mặc định là 10  
+print(result1)  # Kết quả: 18  
+
+# Gọi bằng tham số vị trí với tham số thứ ba  
+result2 = MyClass().my_method(5, 3, 4)  # c sẽ là 4  
+print(result2)  # Kết quả: 12  
+
+# Lời gọi bằng tham số kiểu keyword  
+result3 = MyClass().my_method(a=5, b=3)  
+print(result3)  # Kết quả: 18  
+Gọi bằng tham số trộn lẫn
+Bạn cũng có thể kết hợp cả hai cách gọi: tham số vị trí và tham số kiểu keyword. Tuy nhiên, các tham số vị trí phải được đặt trước tiên trước khi sử dụng tham số kiểu keyword.
+
+result4 = MyClass().my_method(5, b=3)  # a là 5, b là 3, c là 10  
+print(result4)  # Kết quả: 18  
+Nếu bạn cố gắng truyền tham số theo thứ tự vị trí cho một tham số đã được xác định là kiểu keyword bên dưới, bạn sẽ nhận được lỗi.
+
+# Ví dụ sai  
+try:  
+    result5 = MyClass().my_method(a=5, 3)  # Lỗi  
+except SyntaxError as e:  
+    print(e)  # Sẽ in ra lỗi cú pháp  
 
